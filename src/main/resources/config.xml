@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">	
+	
+	<bean id="instruction1" class="com.java.reporting.tool.Instruction">
+		<property name="entity" value="foo"></property>
+		<property name="buysell" value="B"></property>
+		<property name="agreedFx" value="0.50"></property>
+		<property name="currency" value="SGP"></property>
+		<property name="instDate" value="01 Jan 2016"></property>
+		<property name="settleDate" value="02 Jan 2016"></property>
+		<property name="units" value="200"></property>
+		<property name="ppu" value="100.25"></property>
+	</bean>
+	
+	<bean id="instruction2" class="com.java.reporting.tool.Instruction">
+		<property name="entity" value="bar"></property>
+		<property name="buysell" value="S"></property>
+		<property name="agreedFx" value="0.22"></property>
+		<property name="currency" value="AED"></property>
+		<property name="instDate" value="06 Jan 2016"></property>
+		<property name="settleDate" value="07 Jan 2016"></property>
+		<property name="units" value="450"></property>
+		<property name="ppu" value="150.5"></property>
+	</bean>
+	
+	<bean id="instruction3" class="com.java.reporting.tool.Instruction">
+		<property name="entity" value="bar1"></property>
+		<property name="buysell" value="S"></property>
+		<property name="agreedFx" value="1.17"></property>
+		<property name="currency" value="SAR"></property>
+		<property name="instDate" value="02 Aug 2018"></property>
+		<property name="settleDate" value="03 Aug 2018"></property>
+		<property name="units" value="175"></property>
+		<property name="ppu" value="350.15"></property>
+	</bean>
+	
+	<bean id="instruction4" class="com.java.reporting.tool.Instruction">
+		<property name="entity" value="foo1"></property>
+		<property name="buysell" value="B"></property>
+		<property name="agreedFx" value="0.015"></property>
+		<property name="currency" value="INR"></property>
+		<property name="instDate" value="11 Aug 2018"></property>
+		<property name="settleDate" value="12 Aug 2018"></property>
+		<property name="units" value="290"></property>
+		<property name="ppu" value="67"></property>
+	</bean>
+
+</beans>
